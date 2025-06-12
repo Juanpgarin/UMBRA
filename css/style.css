@@ -523,6 +523,86 @@ footer {
     font-size: 1rem;
     padding: 1rem;
 }
+/* -------------------------------------------------CONTACTO------------------------------------------------------ */
+.comunidad-cuervo {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    color: aliceblue;
+}
+
+.comunidad-cuervo h1,
+.comunidad-cuervo h2 {
+    background-color: rgb(53, 52, 52);
+    text-align: center;
+    color: aliceblue;
+    font-size: 2rem;
+    border: solid rgb(26, 22, 22);
+    border-radius: 50px 0 50px 0;
+    font-weight: bold;
+    padding: 4px 0 0 0;
+}
+
+.interitem {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(53, 52, 52);
+    padding: 15px;
+    border-radius: 30px 0 30px 0;
+    border: solid rgb(26, 22, 22);
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.interitem p {
+    flex: 1 1 250px;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.interitem img{
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    border: solid rgb(26, 22, 22) 0.1rem;
+}
+
+.formcontact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.formcontact label {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.formcontact input,
+.formcontact textarea {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid rgb(26, 22, 22);
+    background-color: rgb(44, 41, 41);
+    color: aliceblue;
+    resize: vertical;
+}
+
+.formcontact input:focus,
+.formcontact textarea:focus {
+    outline: none;
+    border-color: red;
+} 
+
+
+
+
+
 
 .bannerpublicitario {
     background-color: rgb(53, 52, 52, 0.5);
@@ -717,6 +797,17 @@ footer {
 
     .carta-texto {
         font-size: 0.9rem;
+    }
+
+    .interitem {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .interitem img {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 15px;
     }
 }
 
