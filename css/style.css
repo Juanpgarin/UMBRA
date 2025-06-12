@@ -150,17 +150,6 @@ footer {
     padding: 0 30px 0 0;
 }
 
-.novedad-img {
-    display: block;
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 30px 0 0 30px;
-    border: solid rgb(26, 22, 22);
-    border-width: 0.1rem;
-    object-fit: cover;
-}
-
 .nuevorelato {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -287,7 +276,6 @@ footer {
     color: red;
 }
 
-/* ---------------------------------------------Library--------------------------------------------- */
 .biblioteca {
     padding: 20px;
     max-width: 1000px;
@@ -295,13 +283,6 @@ footer {
     font-family: 'cinzel';
     color: aliceblue;
 }
-
-/*  .biblioteca h1, .biblioteca h2{
-    text-align: center;
-    margin: 40px 0 10px;
-    font-size: 2em;
-    text-shadow: 1px 1px 2px black;
- } */
 
 .biblioteca h1,
 .biblioteca h2 {
@@ -317,6 +298,8 @@ footer {
 
 .rel-lib {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     gap: 20px;
     background-color: #2a2a2a;
     border-radius: 10px;
@@ -325,16 +308,16 @@ footer {
 }
 
 .rel-lib img {
+    max-width: 100%;
     width: 300px;
     height: auto;
     border-radius: 5px;
+    object-fit: contain;
 }
 
 .contenidolibro {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: aliceblue;
+    max-width: 600px;
+    
 }
 
 .prologolibro {
@@ -343,7 +326,6 @@ footer {
 }
 
 
-/* -------------------------------------------------Codex------------------------------------------------------- */
 .pre-gallery {
     display: flex;
     flex-direction: row;
@@ -478,7 +460,7 @@ footer {
     color: aliceblue;
 }
 
-/* -------------------------------------------------Umbra------------------------------------------------------ */
+
 .hero-umbra img{
     width: 100%;
     height: auto;
@@ -523,7 +505,7 @@ footer {
     font-size: 1rem;
     padding: 1rem;
 }
-/* -------------------------------------------------CONTACTO------------------------------------------------------ */
+
 .comunidad-cuervo {
     max-width: 900px;
     margin: 40px auto;
@@ -598,10 +580,6 @@ footer {
     outline: none;
     border-color: red;
 } 
-
-
-
-
 
 
 .bannerpublicitario {
@@ -742,6 +720,16 @@ footer {
         padding: 20px 10px;
     }
 
+    .rel-lib { 
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contenidolibro { 
+        padding: 10px;
+        max-width: 100%;
+    }
+
     .gallerycont {
         grid-template-columns: 1fr;
     }
@@ -794,6 +782,20 @@ footer {
     .carta-lectores h2 {
         font-size: 1rem;
     }
+
+    .biblioteca{
+        margin: 20px auto;
+        height: fit-content;
+        padding: 10px;
+        width: 95%;
+    }
+
+    .biblioteca img{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    
 
     .carta-texto {
         font-size: 0.9rem;
